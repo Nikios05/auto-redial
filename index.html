@@ -4,147 +4,171 @@
     <meta charset="UTF-8">
     <title>Neirika auto call</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="reset.css">
 </head>
-<body>
-    <header class="header">
-        <img class="logo" src="img/logo-neirika.png" alt="Neirika">
-        <a class="call-number" href="tel:+74995196565">+7 499 519 65 65</a>
+<body class="page">
+    <header class="page__header header header_font_style">
+        <div class="header__navigation">
+        <a class="header__logo" href="#"><img class="logo" src="img/logo-neirika.png" alt="Neirika"></a>
+        <div class="header__call-number">
+            <a class="call-number call-number_font_style call-number_underline" href="tel:+74995196565">+7 499 519 65 65</a>
+        </div>
         <ul class="list user-navigation">
-            <li class="list__item">
-                <a class="user-navigation__entry" href="#">Войти</a>
+            <li class="list__item user-navigation__item">
+                <a class="user-navigation__entry list__item_font_style list__item_underline" href="#">Войти</a>
             </li>
          </ul>
-        
-        <h1 class="caption">
-            Neirika 
-            <span>умный автообзвон</span>
-        </h1>
-        <p class="">исходящий автообзвон клиентов</p>
-        
-        <form class="form callback-form" action="">
-            <label class="callback-form__text"><input type="text" placeholder="Ваше имя">Ваше имя</label>
-            <label class="callback-form__text"><input type="text" placeholder="Ваш телефон">Ваш телефон</label>
-            <label class="call-btn callback-form__submit"><input type="submit" value="Заказать звонок">Заказать звонок</label>
-        </form>
+        </div>
+        <div class="header__wrap">
+            <h1 class="header__caption caption caption_icon caption_font_style">
+                <strong class="caption_font_highlight">Neirika</strong><br>
+                умный автообзвон
+            </h1>
+            <p class="header__subtitle subtitle subtitle_underline subtitle_font_style">исходящий автообзвон клиентов</p>
+            
+            <form class="header__form form callback-form" action="">
+                <label class="callback-form__text"><input class="callback-form__input callback-form__input_font_style callback-form__input_padding callback-form__input_ph_style callback-form__input_dark_bg" type="text" placeholder="Ваше имя"></label>
+                <label class="callback-form__text"><input class="callback-form__input callback-form__input_font_style callback-form__input_padding callback-form__input_ph_style callback-form__input_dark_bg" type="text" placeholder="Ваш телефон"></label>
+                <label class="callback-form__submit"><input class="call-btn" type="submit" value="Заказать звонок"></label>
+            </form>
+        </div>
     </header>
-    <main class="">
-        <section class="section">
-            <h2 class="section__title">Для чего использовать</h2>
-            <ul class="section__list">
-                <li class="item section__item">
-                    <p class="item__title">Продать</p>
+    <main class="main main_font_style">
+        <div class="main__wrap">
+        <section class="main__section section">
+            <h2 class="section__title section__title_font_style">Для чего использовать</h2>
+            <ul class="section__list use-list use-list_mb">
+                <li class="item section__item section__item_font_style">
+                    <p class="item__title item__title_img_buy item__title_font_style item__title_font_red item__title_mb">Продать</p>
                     <p class="item__descr">Сервис помогает автоматизировать совершение сделок, а удобная статистика экономит ваше ценное время</p>
                 </li>
-                <li class="item section__item">
-                    <p class="item__title">Уведомить</p>
+                <li class="item section__item section__item_font_style">
+                    <p class="item__title item__title_img_notice item__title_font_style item__title_font_red item__title_mb">Уведомить</p>
                     <p class="item__descr">Расскажите о предстоящих акциях, распродаже
                             или мероприятии. Нужно обзвонить 10000 клиентов
                             – легко! Это в 10 раз дешевле чем колл-центр</p>
                 </li>
-                <li class="item section__item">
-                    <p class="item__title">Опросить</p>
+                <li class="item section__item section__item_font_style">
+                    <p class="item__title item__title_img_poll item__title_font_style item__title_font_red item__title_mb">Опросить</p>
                     <p class="item__descr">Быстро получите интересующие вас статистические данные. Клавиши телефона, нажатые как варианты
                             ответов позволяют делать сложные опросники</p>
                 </li>
-                <li class="item section__item">
-                    <p class="item__title">Напомнить</p>
+                <li class="item section__item section__item_font_style">
+                    <p class="item__title item__title_img_reminder item__title_font_style item__title_font_red item__title_mb">Напомнить</p>
                     <p class="item__descr">За короткий срок напомните всем своим клиентам что пора платить. 
                             При общении с роботом у клиента складывается
                             впечатление живого диалога с сотрудником.</p>
                 </li>
             </ul>
-            <button class="call-btn">Заказать звонок</button>
+            <div class="section__button">
+                <button class="call-btn">Заказать звонок</button>
+            </div> 
         </section>
+        </div>
 
-        <section class="section">
-            <h2 class="section__title">Что получаете</h2>
-            <ul class="section__list">
-                <li class="item section__item">
-                    <p class="item__title"><b>Бесплатно</b></p>
+        <section class="section section-center section-center_img">
+        <div class="main__wrap">
+            <h2 class="section__title section__title_font_style section__title_font_white">Что получаете</h2>
+            <ul class="section__list center-list center-list_mb">
+                <li class="item item_box_theme section__item section__item_font_style section__item_font_white">
+                    <p class="item__title item__title_img_hex item__title_img_gift item__title_font_style item__title_font_bs item__title_mb"><b class="item__title_highlight">Бесплатно</b></p>
                     <p class="item__descr">Простой прямой номер в коде 499 - 1шт.</p>
                 </li>
-                <li class="item section__item">
-                    <p class="item__title">от <b>500</b> руб в месяц</p>
+                <li class="item item_box_theme section__item section__item_font_style section__item_font_white">
+                    <p class="item__title item__title_img_hex item__title_img_grow item__title_font_style item__title_mb">от <b class="item__title_highlight">500</b> руб в месяц</p>
                     <p class="item__descr">Информирование и анкетерование, IVR Отчетность, управление обзвоном, белые списки.</p>
                 </li>
-                <li class="item section__item">
-                    <p class="item__title">от <b>1.44</b> руб/минута</p>
+                <li class="item item_box_theme section__item section__item_font_style section__item_font_white">
+                    <p class="item__title  item__title_img_hex item__title_img_call item__title_font_style item__title_mb">от <b class="item__title_highlight">1.44</b> руб/минута</p>
                     <p class="item__descr">Вы платите если дозвонились</p>
                 </li>
             </ul>
-            <button class="call-btn">Заказать звонок</button>
+            <div class="section__button">
+                <button class="call-btn">Заказать звонок</button>
+            </div>  
+        </div>
         </section>
         
-        <section class="section section-install">
-            <h2 class="section__title"><b>Настроить автообзвон</b> быстро и просто</h2>
-            <img class="section-install__img" src="" alt="">
+        <div class="main__wrap">
+        <section class="main__section section section-install">
+            <h2 class="section__title section__title_font_style"><b class="section__title__font_highlight">Настроить автообзвон</b> быстро и просто</h2>
+            <div class="section-install__img"></div>
         </section>
 
         <section class="section">
-            <h2 class="section__title">Нам доверяют</h2>
-            <ul class="section__list">
-                <li class="section__item">
-                    <img src="" alt="kia">
+            <h2 class="section__title section__title_font_style section__title_lineup">Нам доверяют</h2>
+            <ul class="section__list section__client-list client-list">
+                <li class="section__item client-list__item">
+                    <img src="img/customers/kia-off.png" width="213" height="108" alt="kia">
                 </li>
-                <li class="section__item">
-                    <img src="" alt="min-bank">
+                <li class="section__item client-list__item">
+                    <img src="img/customers/Minbank-off.png" width="331" height="82" alt="min-bank">
                 </li>
-                <li class="section__item">
-                    <img src="" alt="pleer">
+                <li class="section__item client-list__item">
+                    <img src="img/customers/pleer-off.png"width="209" height="89"  alt="pleer">
                 </li>
-                <li class="section__item">
-                    <img src="" alt="zara">
+                <li class="section__item client-list__item">
+                    <img src="img/customers/zara.png" width="266" height="63" alt="zara">
                 </li>
-                <li>
-                    <img src="" alt="sela">
+                <li class="section__item client-list__item">
+                    <img src="img/customers/sela-off1x.png" width="219" height="64" alt="sela">
                 </li>
-                <li class="section__item">
-                    <img src="" alt="lamoda">
+                <li class="section__item client-list__item">
+                    <img src="img/customers/lamoda.png" width="274" height="66" alt="lamoda">
                 </li>
-                <li class="section__item">
-                    <img src="" alt="maykor">
+                <li class="section__item client-list__item">
+                    <img src="img/customers/maykor-off.png" width="277" height="73" alt="maykor">
                 </li>
-                <li class="section__item">
-                    <img src="" alt="rus-gidro">
+                <li class="section__item client-list__item">
+                    <img src="img/customers/rusGidro-off.png" width="266" height="90" alt="rus-gidro">
                 </li>
-                <li class="section__item">
-                    <img src="" alt="dixi">
+                <li class="section__item client-list__item">
+                    <img src="img/customers/dixi-off.png" width="282" height="83" alt="dixi">
                 </li>
             </ul>
         </section>
+        </div>
 
-        <section class="section">
-            <h2 class="section__title"><b>Дополнительные возможности</b> Neirika</h2>
-            <ul class="section__list">
-                    <li class="item section__item">
-                        <p class="item__title">Модуль Omnichannel</p>
+        <section class="section section-more_mb section-more section-more_img">
+            <div class="main__wrap">
+            <h2 class="section__title section__title_font_style section__title_font_white"><b class="section__title__font_highlight">Дополнительные возможности</b> Neirika</h2>
+            <ul class="section__list section-more__list">
+                    <li class="item item_box_theme section__item section__item_font_style section__item_font_white">
+                        <p class="item__title item__title_img_hex item__title_img_omnich item__title_font_style item__title_mb">Модуль Omnichannel</p>
                         <p class="item__descr">Сообщения из мессенджеров собираются в едином окне и распределяются между операторами</p>
                     </li>
-                    <li class="item section__item">
-                        <p class="item__title">Модуль ВАТС</p>
+                    <li class="item item_box_theme section__item section__item_font_style section__item_font_white">
+                        <p class="item__title item__title_img_hex item__title_img_vats item__title_font_style item__title_mb">Модуль ВАТС</p>
                         <p class="item__descr">Личный кабинет для организации телефонной связи  Конференции. Многоуровневое IVR и много другое</p>
                     </li>
-                    <li class="item section__item">
-                        <p class="item__title">Виртуальный номер</p>
+                    <li class="item item_box_theme section__item section__item_font_style section__item_font_white">
+                        <p class="item__title item__title_img_hex item__title_img_vnumber item__title_font_style item__title_mb">Виртуальный номер</p>
                         <p class="item__descr">Покупка виртуального номера позволяет решить максимальное количество задач без лишних переплат</p>
                     </li>
-                    <li class="item section__item">
-                        <p class="item__title">Интеграция</p>
+                    <li class="item item_box_theme section__item section__item_font_style section__item_font_white">
+                        <p class="item__title item__title_img_hex item__title_img_integr item__title_font_style item__title_mb">Интеграция</p>
                         <p class="item__descr">Интеграция виртуальной АТС с вашей CRM системой (Битрикс24, amoCRM, zendesk)</p>
                     </li>
                 </ul>
+            </div>
+        </section>
+
+        <section class="section ">
+            <form class="section__form-down form callback-form" action="">
+                <label class="callback-form__text"><input class="callback-form__input callback-form__input_font_style callback-form__input_padding callback-form__input_ph_style callback-form__input_light_bg" type="text" placeholder="Ваше имя"></label>
+                <label class="callback-form__text"><input class="callback-form__input callback-form__input_font_style callback-form__input_padding callback-form__input_ph_style callback-form__input_light_bg" type="text" placeholder="Ваш телефон"></label>
+                <label class="callback-form__submit"><input class="call-btn" type="submit" value="Заказать звонок"></label>
+            </form>
         </section>
     </main>
-    <footer>
-        <form class="form callback-form" action="">
-            <label class="callback-form__text"><input type="text" placeholder="Ваше имя">Ваше имя</label>
-            <label class="callback-form__text"><input type="text" placeholder="Ваш телефон">Ваш телефон</label>
-            <label class="call-btn callback-form__submit"><input type="submit" value="Заказать звонок">Заказать звонок</label>
-        </form>
-        <img class="logo" src="img/logo-neirika.png" alt="Neirika">
-        <a class="call-number" href="tel:+74995196565">+7 499 519 65 65</a>
-        <a class="email" href="mailto:client@neirika.ru">client@neirika.ru</a>
+    <footer class="footer footer_font_style">
+        <div class="footer__wrap">
+            <img class="logo" src="img/logo-neirika.png" alt="Neirika">
+            <div class="footer-links">
+                <a class="footer-links__link footer-links_icon_call call-number call-number_font_style call-number_decor_none" href="tel:+74995196565">+7 499 519 65 65</a>
+                <a class="footer-links__link footer-links_icon_email email email_font_style" href="mailto:client@neirika.ru">client@neirika.ru</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
