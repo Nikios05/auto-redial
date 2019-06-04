@@ -5,6 +5,9 @@
 }
 
 .header {
+    background: #141434;
+    border-bottom-left-radius: 500% 50%;
+    border-bottom-right-radius: 500% 50%;
     background: url("img/header-bg.jpg") no-repeat 0 0;
 }
 
@@ -21,8 +24,15 @@
     align-items: center;
 }
 
+.logo:hover,
+.logo:focus {
+    outline: none;
+    filter: blur(1px);
+    opacity: 0.8; 
+}
+
 .header__logo {
-    flex-grow: 1;
+    margin-right: auto;
 }
 
 .header_font_style {
@@ -48,10 +58,23 @@
     font-size: 20px;
     line-height: 60px;
     color: #fff;
+    transition: color 0.3s;
 }
 
 .call-number_underline {
     border-bottom: 1px solid #fff;
+    transition: all 0.3s;
+}
+
+.call-number:hover,
+.call-number:focus {
+    outline: none;
+    color: #ac0042;
+}
+
+.call-number_underline:hover,
+.call-number_underline:focus {
+    border-bottom: 1px solid #ac0042;
 }
 
 .user-navigation {
@@ -70,10 +93,24 @@
     font-size: 18px;
     line-height: 60px;
     color: #fff;
+    transition: color 0.3s;
 }
 
 .list__item_underline {
     border-bottom: 1px solid #fff;
+    transition: all 0.3s;
+}
+
+.list__item_underline:hover,
+.list__item_underline:focus{
+    border-bottom: 1px solid #ac0042;
+}
+
+
+.list__item:hover,
+.list__item:focus {
+    outline: none;
+    color: #ac0042;
 }
 
 .header__caption {
@@ -158,6 +195,7 @@
     opacity: 0.8;
 }
 
+
 .callback-form__input_padding {
     padding-left: 30px;
 }
@@ -176,15 +214,34 @@
 .callback-form__input_light_bg {
     background-color: rgba(224, 224, 245, 0.35);
     border: 1px solid #9eabc5;
+    color: #141434;
+}
+
+.callback-form__input_light_bg:hover,
+.callback-form__input_light_bg:focus {
+    outline: none;
+    background-color: #d7dbe2;
+    border: 1px solid #141434;
+    opacity: 0.5;
 }
 
 .callback-form__input_light_bg::placeholder {
     color: #888888;
 }
 
+.callback-form__input_light_bg:hover::placeholder {
+    color: #141434;
+}
+
 .callback-form__input_dark_bg {
     background-color: rgba(255, 255, 255, 0.3);
     border: 1px solid #f6f7f9;
+}
+
+.callback-form__input_dark_bg:hover,
+.callback-form__input_dark_bg:focus {
+    outline: none;
+    opacity: 0.9;
 }
 
 .callback-form__input_dark_bg::placeholder {
@@ -206,6 +263,19 @@
     letter-spacing: 0.1em;
     font-size: 20px;
     color: #fff;
+
+    transition: all 0.3s;
+}
+
+.call-btn:hover,
+.call-btn:focus {
+    outline: none;
+    background-color: #fff;
+    color: #ac0042;
+}
+
+.call-btn:active {
+    transform: scale(0.95);
 }
 
 .section__button {
@@ -483,6 +553,11 @@
     position: relative;
     padding: 115px 0 100px 0;
     margin-bottom: 95px;
+    background: #141434;
+    border-bottom-left-radius: 500% 50%;
+    border-bottom-right-radius: 500% 50%;
+    border-top-left-radius: 500% 50%;
+    border-top-right-radius: 500% 50%;
     background: url("img/body-bg.png") no-repeat 0 0;
 }
 
@@ -515,6 +590,11 @@
     position: relative;
     padding: 115px 0 100px 0;
     margin-bottom: 95px;
+    background: #141434;
+    border-bottom-left-radius: 500% 50%;
+    border-bottom-right-radius: 500% 50%;
+    border-top-left-radius: 500% 50%;
+    border-top-right-radius: 500% 50%;
     background: url("img/footer-bg.png") no-repeat 0 0;
 }
 
@@ -578,15 +658,26 @@
 }
 
 .client-list__item {
+    position: relative;
     width: 320px;
     margin-bottom: 75px;
     margin-right: 0;
 }
 
+.client-list__img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.client-list__img:hover {
+    opacity: 1;
+}
 .footer {
     background-color: #141434;
     border: none;
-    border-radius: 50% 50% 0 0;
+    border-top-left-radius: 400% 550%;
+    border-top-right-radius: 400% 550%;
 
     padding-bottom: 1px;
 }
@@ -657,7 +748,14 @@
     color: #fff;
 }
 
+.email:hover,
+.email:focus {
+    outline: none;
+    color: #ac0042;
+}
+
 .footer-links_icon_email {
+    outline: none;
     position: relative;
 }
 
