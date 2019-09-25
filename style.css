@@ -53,10 +53,11 @@
 }
 
 .call-number_font_style {
+    margin-bottom: 20px;
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
-    line-height: 60px;
+    line-height: 20px;
     color: #fff;
     transition: color 0.3s;
 }
@@ -701,10 +702,7 @@
 }
 
 .footer-links__link {
-    margin: 0;
-    padding: 0;
-    
-    line-height: 0;
+    display: block;
 }
 
 .footer-links_icon_call {
@@ -714,8 +712,8 @@
 .footer-links_icon_call::before {
     content: "";
     position: absolute;
-    top: -15px;
-    left: -45px;
+    top: -5px;
+    left: -40px;
     width: 30px;
     height: 30px;
 
@@ -726,8 +724,8 @@
 .footer-links_icon_call::after {
     content: "";
     position: absolute;
-    top: -9px;
-    left: -39px;
+    top: 0;
+    left: -34px;
 
     width: 18px;
     height: 18px;
@@ -744,7 +742,7 @@
     text-decoration: none;
     font-weight: 400;
     font-size: 20px;
-    line-height: 60px;
+    line-height: 20px;
     color: #fff;
 }
 
@@ -763,6 +761,7 @@
     content: "";
     position: absolute;
     bottom: 18px;
+    top: 3px;
     left: -25px;
 
     width: 18px;
